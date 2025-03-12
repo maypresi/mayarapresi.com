@@ -1,13 +1,9 @@
 /* Base Styles */
 :root {
     --primary-color: #2d4638;
-    /* Dark forest green from right card */
     --primary-light: #8ca58d;
-    /* Light sage green from left card */
     --primary-dark: #1c2e22;
-    /* Darker version of forest green */
     --secondary-color: #f2e9de;
-    /* Light beige from wooden elements */
     --text-color: #333333;
     --text-light: #767676;
     --white: #ffffff;
