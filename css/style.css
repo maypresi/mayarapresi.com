@@ -345,9 +345,14 @@ footer p {
     margin-bottom: 5px;
 }
 
+footer p:last-child {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
 footer a {
     color: var(--secondary-color);
-    text-decoration: underline;
+    text-decoration: none;
     transition: var(--transition);
 }
 
