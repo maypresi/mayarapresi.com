@@ -124,15 +124,16 @@
                     serviços.</p>
 
                 <div class="contact-methods">
-                    <a href="https://wa.me/55XXXXXXXXXX" class="contact-button whatsapp">
+                    <a href="https://wa.me/5521992400365" class="contact-button whatsapp" target="_blank"
+                        rel="noopener noreferrer">
                         <i class="fab fa-whatsapp"></i>
                         <span>WhatsApp</span>
                     </a>
-                    <a href="mailto:contato@mayarapresi.com" class="contact-button email">
+                    <a href="mailto:maypresi@gmail.com" class="contact-button email">
                         <i class="fas fa-envelope"></i>
                         <span>Email</span>
                     </a>
-                    <a href="tel:+55XXXXXXXXXX" class="contact-button phone">
+                    <a href="tel:+5521992400365" class="contact-button phone">
                         <i class="fas fa-phone"></i>
                         <span>Telefone</span>
                     </a>
@@ -146,17 +147,15 @@
                 <p>Siga-me nas redes sociais para dicas de nutrição, receitas saudáveis e mais:</p>
 
                 <div class="social-links">
-                    <a href="https://instagram.com/mayarapresi" class="social-link instagram">
+                    <a href="https://instagram.com/nutripresi" class="social-link instagram" target="_blank"
+                        rel="noopener noreferrer">
                         <i class="fab fa-instagram"></i>
                         <span>Instagram</span>
                     </a>
-                    <a href="https://facebook.com/mayarapresi" class="social-link facebook">
-                        <i class="fab fa-facebook"></i>
-                        <span>Facebook</span>
-                    </a>
-                    <a href="https://youtube.com/mayarapresi" class="social-link youtube">
-                        <i class="fab fa-youtube"></i>
-                        <span>YouTube</span>
+                    <a href="https://www.linkedin.com/in/mayarapresi/" class="social-link linkedin" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
                     </a>
                 </div>
             </div>
@@ -165,12 +164,17 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Mayara Presi - Todos os direitos reservados</p>
-            <p>Desenvolvido com ❤️</p>
+            <p>&copy; <span id="currentYear"></span> Mayara Presi - Todos os direitos reservados</p>
+            <p>Desenvolvido por <a href="https://eduardoazevedo.com" target="_blank"
+                    rel="noopener noreferrer">eduardoazevedo.com</a></p>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
