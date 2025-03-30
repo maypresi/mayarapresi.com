@@ -429,10 +429,14 @@ footer a:hover {
     .about-image {
         flex: 0 0 100%;
         margin-bottom: 30px;
+        margin-left: 0;
+        max-width: 70%;
+        margin: 0 auto 30px;
     }
 
     .about-content {
         flex: 0 0 100%;
+        padding-left: 0;
     }
 
     .about h2 {
