@@ -1,10 +1,10 @@
 /* Base Styles */
 :root {
-    --primary-color: #2d4638;
+    --primary-color: #004638;
     --primary-light: #8ca58d;
-    --primary-dark: #1c2e22;
+    --primary-dark: #004638;
     --secondary-color: #f2e9de;
-    --text-color: #333333;
+    --text-color: #004638;
     --text-light: #767676;
     --white: #ffffff;
     --section-padding: 60px 0;
@@ -95,13 +95,17 @@ header::after {
 .profile-container {
     max-width: 600px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .profile-image {
     width: 170px;
     height: auto;
-    margin: 0 auto;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+    flex-shrink: 0;
 }
 
 .profile-image img {
@@ -111,10 +115,14 @@ header::after {
     filter: brightness(0) invert(1);
 }
 
+.profile-text {
+    text-align: left;
+}
+
 header h1 {
     color: var(--white);
     margin-bottom: 8px;
-    font-size: 2.03rem;
+    font-size: 1.8rem;
 }
 
 .profession {
@@ -442,6 +450,15 @@ footer a:hover {
     }
 
     .about h2 {
+        text-align: center;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile-text {
         text-align: center;
     }
 }
