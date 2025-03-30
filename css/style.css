@@ -153,6 +153,7 @@ header h1 {
     display: block;
     mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 70%, transparent 100%);
     -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 70%, transparent 100%);
+    transform: scaleX(-1);
 }
 
 .about-content {
