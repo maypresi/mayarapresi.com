@@ -132,11 +132,41 @@ header h1 {
     background-color: var(--secondary-color);
 }
 
+.about .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-image {
+    flex: 0 0 35%;
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    margin-left: -20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 70%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 70%, transparent 100%);
+}
+
+.about-content {
+    flex: 0 0 65%;
+    padding-left: 20px;
+}
+
+.about h2 {
+    text-align: left;
+}
+
 .about p {
-    text-align: center;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: justify;
+    margin-bottom: 15px;
 }
 
 .services {
@@ -390,5 +420,22 @@ footer a:hover {
     .social-link {
         width: 100%;
         max-width: 280px;
+    }
+
+    .about .container {
+        flex-direction: column;
+    }
+
+    .about-image {
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-content {
+        flex: 0 0 100%;
+    }
+
+    .about h2 {
+        text-align: center;
     }
 }
