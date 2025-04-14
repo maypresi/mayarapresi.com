@@ -38,13 +38,19 @@
                 </div>
                 <div class="about-content">
                     <h2>Sobre Mim</h2>
-                    <p>Olá! Sou Mayara Presi, nutricionista apaixonada por transformar vidas através da alimentação
-                        saudável. Trabalho com nutrição personalizada, respeitando a individualidade de cada paciente e
-                        seus
-                        objetivos.</p>
-                    <p>Especializada em nutrição clínica e esportiva, ajudo pessoas a alcançarem seus objetivos de saúde
-                        com
-                        estratégias nutricionais baseadas em evidências científicas.</p>
+                    <p>Sou nutricionista pós-graduada em Nutrição Clínica, com foco em emagrecimento, ganho de massa
+                        muscular e reeducação alimentar. Realizo atendimentos online, oferecendo soluções nutricionais
+                        práticas e adaptadas à rotina de cada paciente. Além disso, mantenho um grupo exclusivo de
+                        nutrição, onde compartilho dicas, orientações e incentivo diário para ajudar meus pacientes a se
+                        manterem motivados e alcançarem seus objetivos com mais leveza e constância.</p>
+                    <p>Estou sempre em busca de aprimoramento para oferecer um atendimento completo e atualizado. Tenho
+                        experiência em diferentes áreas da nutrição, incluindo nutrição clínica hospitalar, ambulatorial
+                        e unidades de alimentação e nutrição, sempre com o compromisso de promover saúde e bem-estar.
+                    </p>
+                    <p>Minha prática é voltada para a avaliação individualizada, prescrição de condutas nutricionais
+                        específicas e acompanhamento contínuo, respeitando as necessidades e objetivos de cada pessoa.
+                        Valorizo a escuta ativa, o acolhimento e a construção de um plano alimentar que seja sustentável
+                        e realista.</p>
                 </div>
             </div>
         </section>
@@ -53,7 +59,7 @@
             <div class="container">
                 <h2>Serviços</h2>
 
-                <div class="service-item">
+                <div class="service-item" onclick="scrollToContact()">
                     <div class="service-icon">
                         <i class="fas fa-apple-alt"></i>
                     </div>
@@ -64,7 +70,7 @@
                     </div>
                 </div>
 
-                <div class="service-item">
+                <div class="service-item" onclick="scrollToContact()">
                     <div class="service-icon">
                         <i class="fas fa-dumbbell"></i>
                     </div>
@@ -74,7 +80,7 @@
                     </div>
                 </div>
 
-                <div class="service-item">
+                <div class="service-item" onclick="scrollToContact()">
                     <div class="service-icon">
                         <i class="fas fa-weight"></i>
                     </div>
@@ -84,7 +90,7 @@
                     </div>
                 </div>
 
-                <div class="service-item">
+                <div class="service-item" onclick="scrollToContact()">
                     <div class="service-icon">
                         <i class="fas fa-utensils"></i>
                     </div>
@@ -152,6 +158,11 @@
     <script src="js/script.js"></script>
     <script>
         document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        function scrollToContact() {
+            const contactSection = document.querySelector('.contact');
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
     </script>
 </body>
 
