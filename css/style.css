@@ -179,6 +179,166 @@ header h1 {
     margin-bottom: 15px;
 }
 
+/* Nutrition Group Section */
+.nutrition-group {
+    background-color: var(--primary-color);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    padding: 70px 0;
+}
+
+.nutrition-group .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nutrition-group h2 {
+    color: var(--white);
+    text-align: center;
+}
+
+.title-price-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.title-price-container h2 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.price-tag {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-top: 15px;
+    transform: rotate(5deg);
+    white-space: nowrap;
+}
+
+.group-content {
+    flex: 0 0 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+.group-image {
+    flex: 0 0 40%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    position: relative;
+}
+
+.group-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.group-image:hover img {
+    transform: scale(1.05);
+}
+
+.nutrition-group ul {
+    list-style: none;
+    margin-bottom: 25px;
+    display: inline-block;
+    text-align: left;
+}
+
+.nutrition-group li {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.nutrition-group li i {
+    color: var(--secondary-color);
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.group-highlight {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 25px auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--secondary-color);
+    max-width: 80%;
+}
+
+.group-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--white);
+    color: var(--primary-color);
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.group-button i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.group-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    color: var(--white);
+    background-color: #25D366;
+}
+
+/* Media queries for nutrition group */
+@media (max-width: 768px) {
+    .nutrition-group .container {
+        flex-direction: column;
+    }
+
+    .group-content,
+    .group-image {
+        flex: 0 0 100%;
+    }
+
+    .group-image {
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+    .nutrition-group h2 {
+        text-align: center;
+    }
+
+    .title-price-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .price-tag {
+        margin-left: 0;
+    }
+}
+
 .services {
     background-color: var(--secondary-color);
 }
