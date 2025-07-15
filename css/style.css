@@ -137,6 +137,7 @@ header h1 {
     margin-top: 8px;
 }
 
+/* About Section */
 .about {
     background-color: var(--secondary-color);
 }
@@ -154,6 +155,11 @@ header h1 {
     overflow: hidden;
     box-shadow: var(--box-shadow);
     margin-left: -20px;
+    transition: transform 0.5s ease;
+}
+
+.about-image:hover {
+    transform: translateY(-5px);
 }
 
 .about-image img {
@@ -163,6 +169,11 @@ header h1 {
     mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 70%, transparent 100%);
     -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 70%, transparent 100%);
     transform: scaleX(-1);
+    transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+    transform: scaleX(-1) scale(1.05);
 }
 
 .about-content {
@@ -177,6 +188,200 @@ header h1 {
 .about p {
     text-align: justify;
     margin-bottom: 15px;
+}
+
+/* Ebook Section */
+.ebook-section {
+    background-color: var(--primary-color);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    padding: 70px 0;
+}
+
+
+
+.ebook-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.ebook-image {
+    flex: 0 0 35%;
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.5s ease;
+}
+
+.ebook-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.ebook-image:hover {
+    transform: translateY(-5px);
+}
+
+.ebook-image:hover img {
+    transform: scale(1.05);
+}
+
+
+
+.ebook-text {
+    flex: 0 0 65%;
+    padding-left: 20px;
+}
+
+.ebook-title-price-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.ebook-title-price-container h2 {
+    margin-bottom: 0;
+    text-align: left;
+    flex: 1;
+}
+
+.ebook-price-tag {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-left: 20px;
+    transform: rotate(-5deg);
+    white-space: nowrap;
+    align-self: center;
+}
+
+.ebook-text h2 {
+    color: var(--white);
+    text-align: left;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.ebook-text h3 {
+    color: var(--white);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.ebook-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: var(--white);
+    text-align: justify;
+}
+
+.ebook-features {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.ebook-features li {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+}
+
+.ebook-features li i {
+    color: var(--secondary-color);
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.ebook-highlight {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 25px 0;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--secondary-color);
+    color: var(--white);
+}
+
+.ebook-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--white);
+    color: var(--primary-color);
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ebook-button i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.ebook-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Media queries for ebook section */
+@media (max-width: 768px) {
+    .ebook-content {
+        flex-direction: column;
+    }
+
+    .ebook-image {
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+        max-width: 70%;
+        margin: 0 auto 30px;
+    }
+
+    .ebook-text {
+        flex: 0 0 100%;
+        padding-left: 0;
+    }
+
+    .ebook-text h2 {
+        text-align: center;
+    }
+
+    .ebook-title-price-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ebook-title-price-container h2 {
+        text-align: center;
+    }
+
+    .ebook-price-tag {
+        margin-left: 0;
+        margin-top: 15px;
+    }
 }
 
 /* Nutrition Group Section */
